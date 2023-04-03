@@ -105,7 +105,6 @@ function renderPage(){
   const destinationURL = baseURL + basePath;
   fetch(destinationURL, {method: "GET"}).then((response) => response.json()).then((dogs) => {
     dogs.forEach((dog) => renderOneDog(dog));
-    globalDogs = dogs;
   })
 
 }
