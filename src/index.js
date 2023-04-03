@@ -16,16 +16,16 @@ function main(){
 }
 
 
-/*****************************************************/
-/**Function that add event listeners to DOM elements**/
-/*****************************************************/
+/******************************************************/
+/* Functions that add event listeners to DOM elements */
+/******************************************************/
 function addEventListenerOnForm(){
   document.querySelector("#dog-form").addEventListener("submit", submitHandler);
 }
 
 
 /**************************************************/
-/**Function Handlers that act on triggered events**/
+/* Function Handlers that act on triggered events */
 /**************************************************/
 function editHandler(dog){
   const form = document.querySelector("#dog-form");
@@ -70,7 +70,7 @@ function submitHandler(event){
 
 
 /*************************************************************/
-/**Functions that render the information by DOM manipulation**/
+/* Functions that render the information by DOM manipulation */
 /*************************************************************/
 function renderOneDog(dog){
   let singleRecord = document.createElement("tr");
@@ -98,8 +98,8 @@ function renderOneDog(dog){
 
 
 /***************************************************/
-/*   Functions that communicate with the server.  **/
-/************************************************* */
+/*   Functions that communicate with the server.   */
+/***************************************************/
 function renderPage(){
 
   const destinationURL = baseURL + basePath;
